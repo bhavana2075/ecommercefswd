@@ -28,7 +28,7 @@ export default function AddProduct() {
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:5000/api/product/add", formData, {
+            const response = await axios.post("https://backend-9n3b.onrender.com/api/product/add", formData, {
                 headers: { Authorization: `Bearer ${user.token}` },
             });
 
